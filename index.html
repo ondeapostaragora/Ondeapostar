@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Acesso Oficial & Bônus Exclusivo 2026</title>
+<meta name="description" content="Ative seu bônus de boas-vindas de +500% e acesse a plataforma oficial com liberação imediata via Pix.">
+<style>
+:root{
+--bg:#040b1c;
+--bg2:#08122b;
+--card:rgba(20,42,92,.55);
+--blue:#2b7fff;
+--blue-light:#5aa2ff;
+--blue-neon:#3d8bff;
+--cyan:#35c8ff;
+--green:#22c55e;
+--text:#eaf2ff;
+--muted:#8fa8d4;
+--radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Segoe UI',Roboto,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.55;
+overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+/* ---------- background glow ---------- */
+.glow{position:fixed;border-radius:50%;filter:blur(120px);opacity:.5;pointer-events:none;z-index:0;}
+.glow-1{width:520px;height:520px;background:#123a8f;top:-160px;left:-140px;}
+.glow-2{width:460px;height:460px;background:#0d2f77;bottom:-160px;right:-120px;}
+.glow-3{width:300px;height:300px;background:#1a5fd4;top:40%;left:60%;opacity:.3;}
+
+/* ---------- header ---------- */
+header{
+position:sticky;top:0;z-index:20;
+background:rgba(4,11,28,.88);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(90,162,255,.15);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+.logo{font-size:1.7rem;font-weight:900;letter-spacing:.5px;}
+.logo span{
+background:linear-gradient(90deg,var(--blue-neon),var(--cyan));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.header-btn{
+background:linear-gradient(135deg,var(--blue),#1a5fd4);
+color:#fff;font-weight:700;font-size:.92rem;
+padding:10px 24px;border-radius:999px;
+box-shadow:0 6px 20px rgba(43,127,255,.45);
+transition:.25s;
+}
+.header-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(43,127,255,.65);}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:56px 0 76px;z-index:1;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
+.badge{
+display:inline-flex;align-items:center;gap:8px;
+background:rgba(43,127,255,.14);
+border:1px solid rgba(90,162,255,.45);
+color:var(--blue-light);
+padding:7px 16px;border-radius:999px;
+font-size:.84rem;font-weight:700;letter-spacing:.3px;
+margin-bottom:20px;
+}
+.hero h1{
+font-size:clamp(2.1rem,5.2vw,3.5rem);
+line-height:1.08;
+margin-bottom:18px;
+font-weight:900;
+}
+.hero h1 .grad{
+background:linear-gradient(90deg,var(--blue-neon),var(--cyan));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .sub{color:var(--muted);font-size:1.05rem;max-width:490px;margin-bottom:28px;}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+display:inline-flex;align-items:center;justify-content:center;gap:10px;
+padding:16px 30px;border-radius:16px;
+font-size:1.04rem;font-weight:800;
+transition:.25s;cursor:pointer;border:none;
+}
+.btn svg{width:20px;height:20px;flex:none;}
+.btn-primary{
+background:linear-gradient(135deg,var(--blue-neon),#1a5fd4);
+color:#fff;
+box-shadow:0 10px 30px rgba(43,127,255,.5);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(43,127,255,.7);}
+.btn-ghost{
+background:rgba(90,162,255,.1);
+border:2px solid rgba(90,162,255,.5);
+color:var(--text);
+}
+.btn-ghost:hover{background:rgba(90,162,255,.22);transform:translateY(-3px);}
+
+/* ---------- copyable promo ---------- */
+.promo-hint{
+margin-top:24px;display:inline-flex;align-items:center;gap:12px;
+background:var(--card);border:1px dashed rgba(90,162,255,.55);
+padding:10px 18px;border-radius:14px;
+color:var(--muted);font-size:.92rem;
+cursor:pointer;transition:.2s;user-select:none;
+}
+.promo-hint:hover{border-color:var(--cyan);background:rgba(20,42,92,.8);}
+.promo-code{
+display:inline-flex;align-items:center;gap:6px;
+background:linear-gradient(135deg,var(--blue-neon),var(--cyan));
+color:#04102b;font-weight:900;letter-spacing:1.8px;
+padding:6px 14px;border-radius:10px;font-size:1rem;
+transition:.2s;
+}
+.promo-code.copied{
+background:var(--green);
+color:#fff;
+letter-spacing:.5px;
+}
+
+/* ---------- phone illustration ---------- */
+.phone-wrap{display:flex;justify-content:center;position:relative;}
+.coin{position:absolute;z-index:2;animation:float 5s ease-in-out infinite;pointer-events:none;}
+.coin.c1{top:-26px;right:6%;}
+.coin.c2{bottom:6%;left:-4%;animation-delay:1.4s;}
+.coin.c3{top:38%;right:-6%;animation-delay:2.6s;width:64px;}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg);}50%{transform:translateY(-16px) rotate(10deg);}}
+.phone{
+width:280px;
+background:linear-gradient(160deg,#0c1c42,#081230);
+border:3px solid rgba(90,162,255,.35);
+border-radius:38px;
+padding:36px 16px 20px;
+box-shadow:0 30px 80px rgba(20,70,190,.45), inset 0 0 40px rgba(43,127,255,.12);
+position:relative;
+}
+.phone::before{content:'';position:absolute;top:14px;left:50%;transform:translateX(-50%);width:86px;height:7px;background:#03081a;border-radius:999px;}
+.reg-title{font-weight:800;font-size:1.12rem;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;}
+.reg-title span{font-size:.74rem;color:var(--cyan);background:rgba(53,200,255,.14);padding:3px 9px;border-radius:999px;}
+.field{
+background:rgba(90,162,255,.1);
+border:1px solid rgba(90,162,255,.25);
+border-radius:12px;
+padding:10px 14px;
+font-size:.82rem;color:var(--muted);
+display:flex;align-items:center;gap:8px;
+margin-bottom:9px;
+}
+.field .dot{width:8px;height:8px;border-radius:50%;background:var(--blue-neon);flex:none;}
+.field .chev{margin-left:auto;}
+.phone .promo{
+margin-top:4px;
+background:linear-gradient(135deg,rgba(43,127,255,.35),rgba(53,200,255,.25));
+border:1px solid rgba(90,162,255,.5);
+border-radius:12px;
+padding:10px 14px;
+font-size:.78rem;color:var(--text);
+display:flex;justify-content:space-between;align-items:center;
+cursor:pointer;
+}
+.phone .promo b{letter-spacing:1.5px;font-size:.95rem;color:#fff;}
+.phone .cta{
+display:block;margin-top:14px;text-align:center;
+background:linear-gradient(135deg,var(--blue-neon),#1a5fd4);
+border-radius:12px;padding:13px;
+font-weight:800;font-size:.92rem;color:#fff;
+box-shadow:0 8px 20px rgba(43,127,255,.5);
+transition:.2s;
+}
+.phone .cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(43,127,255,.7);}
+.phone .foot{margin-top:10px;text-align:center;font-size:.68rem;color:var(--muted);}
+
+/* ---------- stats strip ---------- */
+.stats{position:relative;z-index:1;padding:8px 0 48px;}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.stat{
+background:var(--card);
+border:1px solid rgba(90,162,255,.18);
+border-radius:var(--radius);
+padding:22px 16px;text-align:center;
+transition:.25s;
+}
+.stat:hover{transform:translateY(-4px);border-color:rgba(90,162,255,.5);}
+.stat .num{
+font-size:1.75rem;font-weight:900;
+background:linear-gradient(90deg,var(--blue-light),var(--cyan));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.stat .lbl{color:var(--muted);font-size:.84rem;margin-top:4px;}
+
+/* ---------- features ---------- */
+.features{position:relative;z-index:1;padding:48px 0;}
+.section-title{
+font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:900;
+text-align:center;margin-bottom:10px;
+}
+.section-sub{text-align:center;color:var(--muted);margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{
+background:var(--card);
+border:1px solid rgba(90,162,255,.18);
+border-radius:var(--radius);
+padding:28px 24px;
+transition:.25s;
+position:relative;overflow:hidden;
+}
+.card::before{
+content:'';position:absolute;top:-60px;right:-60px;
+width:150px;height:150px;border-radius:50%;
+background:radial-gradient(circle,rgba(43,127,255,.3),transparent 70%);
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(90,162,255,.55);box-shadow:0 20px 44px rgba(10,40,120,.5);}
+.icon-wrap{
+width:54px;height:54px;border-radius:16px;
+background:linear-gradient(135deg,rgba(43,127,255,.3),rgba(53,200,255,.15));
+border:1px solid rgba(90,162,255,.4);
+display:flex;align-items:center;justify-content:center;
+margin-bottom:16px;
+}
+.icon-wrap svg{width:28px;height:28px;}
+.card h3{font-size:1.1rem;margin-bottom:8px;}
+.card p{color:var(--muted);font-size:.92rem;}
+
+/* ---------- steps ---------- */
+.how{position:relative;z-index:1;padding:48px 0;background:linear-gradient(180deg,transparent,rgba(8,18,43,.9),transparent);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.step{
+background:var(--card);
+border:1px solid rgba(90,162,255,.18);
+border-radius:var(--radius);
+padding:24px 20px;
+}
+.step-num{
+width:38px;height:38px;border-radius:12px;
+background:linear-gradient(135deg,var(--blue-neon),#1a5fd4);
+display:flex;align-items:center;justify-content:center;
+font-weight:900;font-size:1.05rem;color:#fff;
+margin-bottom:14px;
+box-shadow:0 6px 18px rgba(43,127,255,.5);
+}
+.step h3{font-size:1rem;margin-bottom:6px;}
+.step p{color:var(--muted);font-size:.86rem;}
+
+/* ---------- big promo ---------- */
+.promo-sec{position:relative;z-index:1;padding:56px 0;}
+.promo-card{
+max-width:640px;margin:0 auto;text-align:center;
+background:linear-gradient(150deg,rgba(20,42,92,.85),rgba(10,24,60,.95));
+border:1px solid rgba(90,162,255,.4);
+border-radius:28px;
+padding:46px 28px;
+box-shadow:0 30px 80px rgba(10,40,120,.5);
+position:relative;overflow:hidden;
+}
+.promo-card::before{
+content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);
+width:320px;height:200px;border-radius:50%;
+background:radial-gradient(ellipse,rgba(53,200,255,.35),transparent 70%);
+}
+.promo-card h2{font-size:1.5rem;font-weight:900;margin-bottom:6px;position:relative;}
+.promo-big{
+display:inline-block;
+font-size:clamp(2.5rem,7vw,3.6rem);font-weight:900;letter-spacing:8px;
+background:linear-gradient(90deg,var(--blue-light),var(--cyan));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+margin:10px 0;position:relative;cursor:pointer;
+}
+.promo-card p{color:var(--muted);margin-bottom:26px;position:relative;}
+
+/* ---------- footer ---------- */
+footer{
+position:relative;z-index:1;
+padding:36px 0 110px;
+border-top:1px solid rgba(90,162,255,.12);
+text-align:center;color:var(--muted);font-size:.84rem;
+}
+.disclaimer{max-width:680px;margin:0 auto 12px;}
+
+/* ---------- sticky mobile CTA ---------- */
+.sticky-cta{
+position:fixed;bottom:0;left:0;right:0;z-index:30;
+display:none;gap:10px;
+padding:12px 14px calc(12px + env(safe-area-inset-bottom));
+background:rgba(4,11,28,.95);
+backdrop-filter:blur(12px);
+border-top:1px solid rgba(90,162,255,.25);
+}
+.sticky-cta a{
+flex:1;text-align:center;
+padding:14px 8px;font-size:.94rem;font-weight:800;border-radius:14px;
+}
+.sticky-cta .reg{background:linear-gradient(135deg,var(--blue-neon),#1a5fd4);color:#fff;box-shadow:0 6px 20px rgba(43,127,255,.45);}
+.sticky-cta .go{background:rgba(90,162,255,.12);border:2px solid rgba(90,162,255,.5);}
+
+@media (max-width:900px){
+.hero-grid{grid-template-columns:1fr;gap:36px;}
+.phone{transform:scale(.95);}
+.grid{grid-template-columns:repeat(2,1fr);}
+.steps{grid-template-columns:repeat(2,1fr);}
+.stats-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:640px){
+.sticky-cta{display:flex;}
+.grid{grid-template-columns:1fr;}
+.hero{padding:32px 0 56px;}
+.cta-row .btn{width:100%;}
+.promo-hint{width:100%;justify-content:space-between;}
+}
+</style>
+</head>
+<body>
+
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+<div class="glow glow-3"></div>
+
+<header>
+<div class="container header-inner">
+<div class="logo">1<span>win</span></div>
+<a class="header-btn" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">Criar Conta (+500%)</a>
+</div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.8L21 11l-6.6 2.2L12 20l-2.4-6.8L3 11l6.6-2.2L12 2z" fill="#5aa2ff"/></svg>
+Liberação imediata via Pix • +500% de Bônus
+</div>
+<h1>Plataforma Oficial no Brasil com <span class="grad">+500% de Bônus</span></h1>
+<p class="sub">Cotações altas no futebol, depósitos e saques instantâneos via Pix sem burocracia e transmissões ao vivo grátis.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#fff" stroke-width="2.2"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+Registrar-se com Bônus
+</a>
+<a class="btn btn-ghost" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#5aa2ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+Ir para a Plataforma
+</a>
+</div>
+<div class="promo-hint" onclick="copyPromo(this)" title="Clique para copiar">
+<span>Toque para copiar o código:</span>
+<span class="promo-code" data-code="BRL666">BRL666</span>
+</div>
+</div>
+
+<!-- phone illustration -->
+<div class="phone-wrap">
+<svg class="coin c1" width="84" height="84" viewBox="0 0 88 88">
+<circle cx="44" cy="44" r="42" fill="#123a8f" stroke="#5aa2ff" stroke-width="3"/>
+<circle cx="44" cy="44" r="30" fill="none" stroke="#35c8ff" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="44" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#9cc6ff">R$</text>
+</svg>
+<svg class="coin c2" width="68" height="68" viewBox="0 0 88 88">
+<circle cx="44" cy="44" r="42" fill="#0d2f77" stroke="#3d8bff" stroke-width="3"/>
+<text x="44" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#7fb6ff">R$</text>
+</svg>
+<svg class="coin c3" width="60" height="60" viewBox="0 0 88 88">
+<circle cx="44" cy="44" r="42" fill="#1a5fd4" stroke="#35c8ff" stroke-width="3"/>
+<text x="44" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#eaf6ff">1</text>
+</svg>
+
+<div class="phone">
+<div class="reg-title">Cadastro Rápido <span>+500%</span></div>
+<div class="field"><span class="dot" style="background:#2ee06f"></span>Real brasileiro (BRL)<span class="chev">▾</span></div>
+<div class="field"><span class="dot"></span>+55 (11) 90000-0000</div>
+<div class="field"><span class="dot" style="background:#35c8ff"></span>seuemail@gmail.com</div>
+<div class="field"><span class="dot" style="background:#5aa2ff"></span>••••••••••</div>
+<div class="promo" onclick="copyPhonePromo(this)">Bônus ativo: <b>BRL666</b></div>
+<a class="cta" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">Criar Conta Agora →</a>
+<div class="foot">Depósitos e saques instantâneos via Pix</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+<div class="container stats-grid">
+<div class="stat"><div class="num">+500%</div><div class="lbl">bônus nos primeiros depósitos</div></div>
+<div class="stat"><div class="num">Instantâneo</div><div class="lbl">saque via Pix, sem taxas</div></div>
+<div class="stat"><div class="num">100%</div><div class="lbl">transmissões ao vivo grátis</div></div>
+<div class="stat"><div class="num">24/7</div><div class="lbl">suporte em português</div></div>
+</div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+<div class="container">
+<h2 class="section-title">Por que escolher a 1win?</h2>
+<p class="section-sub">Tudo o que você precisa para acompanhar os jogos com agilidade e segurança.</p>
+<div class="grid">
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-6 4 4 6-8 3 4" stroke="#5aa2ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 21h18" stroke="#35c8ff" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+<h3>Cotações acima da média</h3>
+<p>Odds competitivas no Brasileirão, Libertadores, Champions League e principais ligas.</p>
+</div>
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="#5aa2ff" stroke-width="2" stroke-linejoin="round"/></svg></div>
+<h3>Saque instantâneo via Pix</h3>
+<p>Seus ganhos caem direto na sua conta bancária em poucos minutos e sem taxas.</p>
+</div>
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="13" rx="2.5" stroke="#5aa2ff" stroke-width="2"/><path d="M9 21h6" stroke="#35c8ff" stroke-width="2.2" stroke-linecap="round"/><path d="M10 9l4.5 2.5L10 14V9z" fill="#35c8ff"/></svg></div>
+<h3>Transmissões ao vivo</h3>
+<p>Assista às partidas em tempo real direto pela plataforma enquanto acompanha os lances.</p>
+</div>
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5aa2ff" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="#35c8ff" stroke-width="2"/><circle cx="12" cy="12" r="1.2" fill="#fff"/></svg></div>
+<h3>Mais de 10.000 opções</h3>
+<p>Catálogo completo de eventos esportivos e jogos online disponíveis 24 horas.</p>
+</div>
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9 6.7 19l1-5.8-4.2-4.1 5.9-.9L12 3z" stroke="#5aa2ff" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+<h3>Vantagens VIP exclusivas</h3>
+<p>Cashback semanal e condições especiais para usuários ativos na plataforma.</p>
+</div>
+<div class="card">
+<div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="6" stroke="#5aa2ff" stroke-width="2"/><path d="M13.5 13.5L21 21" stroke="#35c8ff" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+<h3>Pix e Criptomoedas</h3>
+<p>Flexibilidade total para movimentar seu saldo em Reais (BRL) ou criptoativos.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section class="how">
+<div class="container">
+<h2 class="section-title">Como ativar seu bônus em 4 passos</h2>
+<p class="section-sub">Cadastro simplificado em menos de 1 minuto.</p>
+<div class="steps">
+<div class="step"><div class="step-num">1</div><h3>Acesse o site</h3><p>Clique em "Registrar-se com Bônus" e escolha Real brasileiro (BRL).</p></div>
+<div class="step"><div class="step-num">2</div><h3>Preencha os dados</h3><p>Informe seu telefone, e-mail e crie uma senha segura.</p></div>
+<div class="step"><div class="step-num">3</div><h3>Aplique o código</h3><p>Insira <b>BRL666</b> no campo de código promocional para liberar os +500%.</p></div>
+<div class="step"><div class="step-num">4</div><h3>Conclua via Pix</h3><p>Finalize o cadastro, faça seu primeiro Pix e aproveite o saldo extra.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ================= PROMO ================= -->
+<section class="promo-sec">
+<div class="container">
+<div class="promo-card">
+<h2>Código promocional (+500%)</h2>
+<div class="promo-big" onclick="copyBigPromo(this)" title="Toque para copiar">BRL666</div>
+<p>Toque no código acima para copiar e ative no seu cadastro</p>
+<a class="btn btn-primary" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#fff" stroke-width="2"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+Criar conta com bônus
+</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p class="disclaimer">Jogue com responsabilidade. Acesso permitido apenas para maiores de 18 anos. Conteúdo informativo — consulte os termos oficiais da plataforma.</p>
+<p>© 2026 1win Brasil</p>
+</div>
+</footer>
+
+<div class="sticky-cta">
+<a class="reg" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">Criar Conta (+500%)</a>
+<a class="go" href="https://lkqz.pro/77be70fd" target="_blank" rel="nofollow noopener noreferrer">Acessar Site</a>
+</div>
+
+<script>
+function fallbackCopy(text) {
+const ta = document.createElement('textarea');
+ta.value = text;
+ta.style.position = 'fixed';
+ta.style.opacity = '0';
+document.body.appendChild(ta);
+ta.select();
+try { document.execCommand('copy'); } catch (e) {}
+document.body.removeChild(ta);
+}
+
+function copyText(text) {
+if (navigator.clipboard && window.isSecureContext) {
+navigator.clipboard.writeText(text).catch(() => fallbackCopy(text));
+} else {
+fallbackCopy(text);
+}
+}
+
+function copyPromo(el) {
+copyText('BRL666');
+const badge = el.querySelector('.promo-code');
+badge.classList.add('copied');
+badge.textContent = 'COPIADO! ✓';
+setTimeout(() => {
+badge.classList.remove('copied');
+badge.textContent = 'BRL666';
+}, 2000);
+}
+
+function copyPhonePromo(el) {
+copyText('BRL666');
+const b = el.querySelector('b');
+b.textContent = 'COPIADO! ✓';
+setTimeout(() => { b.textContent = 'BRL666'; }, 2000);
+}
+
+function copyBigPromo(el) {
+copyText('BRL666');
+el.textContent = 'COPIADO!';
+setTimeout(() => { el.textContent = 'BRL666'; }, 2000);
+}
+</script>
+
+</body>
+</html>
